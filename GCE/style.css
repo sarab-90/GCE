@@ -147,3 +147,33 @@ section.active {
 .social-links a:hover {
     color: #de0ebb; 
 }
+
+
+/* Register section */
+#Register{
+  padding: 60px 20px;
+  margin: 50px auto;
+  width: 600px;
+  border: 2px solid ;
+  border-radius: 20px;
+  box-shadow: 0 0 20px #d8289a;
+  text-align: center;
+}
+#Register h2{
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+#Register img{
+  width: 250px;
+  height: auto;
+  border: 2px solid ;
+  border-radius: 15px;
+  padding: 8px;
+  margin-bottom: 20px;
+}
+#Register p{
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
