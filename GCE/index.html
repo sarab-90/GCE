@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="#countdown" onclick="showSectionFun('countdown')">Countdown</a>
+        <a href="#contact" onclick="showSectionFun('contact')">Contact</a>
+    </nav>
+    <!-- countdown  section-->
+    <section id="countdown" class="active">
+        <h2>Countdown to Event</h2>
+        <div id="countdown-box">
+            <div class="time-box">
+                <span id="days">0</span>
+                <p>Days</p>
+            </div>
+            <div class="time-box">
+                <span id="hours">0</span>
+                <p>Hours</p>
+            </div>
+            <div class="time-box">
+                <span id="minutes">0</span>
+                <p>Minutes</p>
+            </div>
+        </div>
+        <p id="countdownMessage"></p>
+    </section>
+    
+    <section id="contact">
+        <h1>Contact Us</h1>
+        <form id="contactForm" onsubmit="return false">
+            <label for="name">Your Name</label>
+            <input type="text" id="name"required>
+            
+            <label for="email">Your Email </label>
+            <input type="email" id="email" required>
+            
+            <label for="contactMessage">Message</label>
+            
+            <textarea id="contactMessage" rows="9" required></textarea>
+            
+            <button type="submit" id="send">Send</button>
+            <p id="confirmation"></p>
+        </form>
+    </section>
+
+
+
+
+    <footer class="social-links">
+        <h2>Social accounts</h2>
+        <div>
+            <a href="https://web.facebook.com/SDKcompany/?locale=ar_AR&_rdc=1&_rdr#" target="_blank"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.linkedin.com/company/sdk-training-center/?originalSubdomain=jo" target="_blank"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.instagram.com/sdktraining/?hl=ar" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="https://learnworld.learnworlds.com/" target="_blank"><i class="bi bi-globe"></i></a>
+        </div>
+   </footer>
+
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
