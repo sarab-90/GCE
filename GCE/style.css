@@ -43,47 +43,62 @@ section.active {
   display: inline-block;
   text-align: center;
   margin-top: 100px;
-  padding: 30px;
-  border: 2px solid #2623d3;
-  border-radius: 15px;
-  
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px #2408a4;
+  background: linear-gradient(135deg, #ef5ac3, #3ba7ef);    
 }
 #countdown h2{
   margin-bottom: 40px; 
-  font-size: 25px;
+  font-size: 32px;
   font-weight: bold;
+  text-transform: uppercase;
 }
 #countdown-box{
   display: flex;       
   justify-content: center; 
   gap: 20px;                
-  margin-top: 0;
+  margin-top: 20px;
+  flex-wrap: wrap;
 }
 .time-box {
-  background: #fff;
+  width: 100px;
+  background: #eb4cbb;
   padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(12, 11, 11, 0.2);
+  border-radius: 20px;
+  box-shadow: 0 8px 15px rgba(31, 57, 129, 0.2);
   min-width: 30px;
   text-align: center;       
 }
+.time-box:hover{
+  /* تكبير ودوران  */
+  transform: scale(1.15) rotate(5deg);
+}
 .time-box span {
-  display: block;           
+  display: block;    
+  margin-bottom: 5px;       
   font-size: 25px;
   font-weight: bold;
-  color: #d6336c;
+  color: white;
 }
 .time-box p {
   margin: 0;
   font-size: 20px;
   font-weight: bold;
   color: #555;
+    /* اضافة مسافة بين حروف  */
+  letter-spacing: 1px; 
+}
+/* حركة عند تغيير الرقم */
+.time-box.animate {
+  transform: scale(1.2);   
 }
 #countdownMessage {
-  margin-top: 20px;
+  margin-top: 30px;
   font-size: 25px;
   font-weight: bold;
-  color: #28a745;
+  color: #169a93;
+  animation: fadeIn 1.5s ease forwards;
 }
 
 /* contact */
@@ -153,24 +168,36 @@ section.active {
 #Register{
   padding: 60px 20px;
   margin: 50px auto;
-  width: 600px;
+  max-width: 600px;
   border: 2px solid ;
   border-radius: 20px;
-  box-shadow: 0 0 20px #d8289a;
+  box-shadow: 0 10px 25px #d8289a;
   text-align: center;
+  transition: transform 0.3s ease;
+  background: linear-gradient(135deg, #ef5ac3, #3ba7ef);
+}
+#Register:hover{
+  transform: scale(1.03);
 }
 #Register h2{
-  font-size: 25px;
+  font-size: 30px;
   font-weight: bold;
   margin-bottom: 30px;
+  /* color: white; */
+  letter-spacing: 1px;
 }
 #Register img{
   width: 250px;
+  max-width: 90%;
   height: auto;
-  border: 2px solid ;
-  border-radius: 15px;
-  padding: 8px;
+  border-radius: 20px;
+  padding: 10px;
+  border: 3px solid #251d7f;
+  box-shadow: 0 8px 20px #de0ebb;
   margin-bottom: 20px;
+}
+#Register img:hover{
+  transform: scale(1.1);
 }
 #Register p{
   font-size: 20px;
