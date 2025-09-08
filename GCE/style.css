@@ -50,7 +50,7 @@ section.active {
 }
 #countdown h2{
   margin-bottom: 40px; 
-  font-size: 32px;
+  font-size: 30px;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -62,8 +62,8 @@ section.active {
   flex-wrap: wrap;
 }
 .time-box {
-  width: 100px;
-  background: #eb4cbb;
+  width: 40px;
+  height: auto;
   padding: 20px;
   border-radius: 20px;
   box-shadow: 0 8px 15px rgba(31, 57, 129, 0.2);
@@ -79,19 +79,19 @@ section.active {
   margin-bottom: 5px;       
   font-size: 25px;
   font-weight: bold;
-  color: white;
+  color: #d6336c;
 }
 .time-box p {
   margin: 0;
-  font-size: 20px;
+  font-size: 10px;
   font-weight: bold;
   color: #555;
-    /* اضافة مسافة بين حروف  */
-  letter-spacing: 1px; 
 }
 /* حركة عند تغيير الرقم */
 .time-box.animate {
-  transform: scale(1.2);   
+  transform: scale(1.2);  
+  background: #eb4cbb;
+  color: #2babe2; 
 }
 #countdownMessage {
   margin-top: 30px;
